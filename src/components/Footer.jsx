@@ -1,12 +1,16 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import { asset } from "../utils/asset";
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="container footer-grid">
         <div className="footer-brand">
-          <img src="/images/svg/logo.svg" alt="Delote Beauty" />
-          <p>Салон красоты на Крестовском острове. Современный сервис, профессиональные мастера и внимание к деталям.</p>
+          <img src={asset("images/svg/logo.svg")} alt="Delote Beauty" />
+          <p>
+            Салон красоты на Крестовском острове. Современный сервис,
+            профессиональные мастера и внимание к деталям.
+          </p>
         </div>
         <div>
           <p className="footer-title">Навигация</p>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { asset } from '../utils/asset';
 
 const navItems = [
   ['/', 'Главная'],
@@ -32,7 +33,7 @@ export default function Header({ solid = false }) {
       <header className={`site-header ${solid || scrolled ? 'site-header--solid' : ''}`}>
         <div className="container header-inner">
           <a className="social-link" href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noreferrer">
-            <img src="/images/svg/inst.svg" alt="" />
+            <img src={asset("/images/svg/inst.svg")} alt="" />
           </a>
 
           <button className="menu-toggle" onClick={() => setMenuOpen(true)} aria-label="Открыть меню">
@@ -42,7 +43,7 @@ export default function Header({ solid = false }) {
           <nav className="desktop-nav" aria-label="Основная навигация">
             {navItems.slice(0, 3).map(([to, label]) => <NavLink key={to} to={to}>{label}</NavLink>)}
             <Link to="/" className="header-logo" aria-label="Delote Beauty">
-              <img src="/images/svg/logo.svg" alt="Delote Beauty" />
+              <img src={asset('images/svg/logo.svg')} alt="Delote Beauty" />
             </Link>
             {navItems.slice(3).map(([to, label]) => <NavLink key={to} to={to}>{label}</NavLink>)}
           </nav>
