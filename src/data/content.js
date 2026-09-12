@@ -4,10 +4,10 @@ import { asset } from '../utils/asset';
 export const services = [
   { title: 'Парикмахерские услуги', image: asset('/images/products/product1.jpg'), tag: 'Hair' },
   { title: 'Маникюр', image: asset('/images/products/product2.jpg'), tag: 'Nails' },
-  { title: 'Педикюр', image: ('/images/products/product3.jpg'), tag: 'Care' },
-  { title: 'Косметология', image: ('/images/products/product4.jpg'), tag: 'Face' },
-  { title: 'Эстетист по телу', image: ('/images/products/product5.jpg'), tag: 'Body' },
-  { title: 'Визаж', image: ('/images/products/product6.jpg'), tag: 'Make-up' },
+  { title: 'Педикюр', image: asset('/images/products/product3.jpg'), tag: 'Care' },
+  { title: 'Косметология', image: asset('/images/products/product4.jpg'), tag: 'Face' },
+  { title: 'Эстетист по телу', image: asset('/images/products/product5.jpg'), tag: 'Body' },
+  { title: 'Визаж', image: asset('/images/products/product6.jpg'), tag: 'Make-up' },
 ];
 
 export const works = [
